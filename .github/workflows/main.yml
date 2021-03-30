@@ -35,19 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Quality Clouds Build Check for Salesforce
-       # You may pin to the exact commit or the version.
-        # uses: qualityclouds/action-full-scan@3811c6efef62be0759fd8709077f1b9c744834d7
-        uses: qualityclouds/action-full-scan@0.0.11
-            with:
-            # You need to provide a valid API key to connect the Quality Clouds ruleset against which your code will be checked
-            token: - name: Quality Clouds Build Check for Salesforce
+ 
   # You may pin to the exact commit or the version.
   # uses: qualityclouds/action-full-scan@3811c6efef62be0759fd8709077f1b9c744834d7
-  uses: qualityclouds/action-full-scan@0.0.11
-  with:
-    # You need to provide a valid API key to connect the Quality Clouds ruleset against which your code will be checked
-    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFkNTY5ZGRmYTVlOWNhNTc0YTE2NDllNzhlZTBkZWJiOGM0MTdmODUyMzE3MjRiZGI1ZDA3MWVmM2UxNjU2MzYyMDQ1YWMzM2E2YmJjMjI3In0.eyJhdWQiOiIyIiwianRpIjoiYWQ1NjlkZGZhNWU5Y2E1NzRhMTY0OWU3OGVlMGRlYmI4YzQxN2Y4NTIzMTcyNGJkYjVkMDcxZWYzZTE2NTYzNjIwNDVhYzMzYTZiYmMyMjciLCJpYXQiOjE2MTcxMDExOTcsIm5iZiI6MTYxNzEwMTE5NywiZXhwIjoxNjQ4NjM3MTk3LCJzdWIiOiIxMjEwIiwic2NvcGVzIjpbImxpdmUtY2hlY2siXX0.iBbeM9u7v0TCQFzWwf9CVF1u_3eYsHOyuPpgVd8n4A3X7Fung7EcUJEGNC0cT34wTDds4G4k1Gir1XTvb4dalQVjsf3BjVy5Hd9oAfd6GhDR5xLG6iQQlyLxrBKu_6I8b8JW9HFdM0gGnpxURjAcdndvPfFWoXYmUhyPhdWu3BUyWAgSQgJiwfuLv8-3pqFrs46oQGJKrg_az4nPHZ9sG_Wdr_e_Emh3CS-TuUSAUjbV1F3EjXCISiYLL-iQjAZXUTqauWvWoePG68Dz3NU_3xQ1uTojBIRhj9bBU3KVK3BHRs_DU1A49CRvdOTRFVbhsWOYvAtXpW1eBDKSvpWRwOa_TX6rhLPbsYA-BrYb6WUQQiYQs5HoAg_qpZwssjmqE0E40SbL1p4GIWoiGNcL00x1ttHxt-Z1jxpvf2N0h3G4oSsZ-067ERFxcnDFUXglo_yKwUaXYQ66eDCtT4bqq1olt54i8e3a2v_VUN8F-nxtQKRN4Bp6fOhUDNnTn7MRtI59y6uPGeIhQ4535ouKXa23u0NOIbjoXSoPfr1NSoJPoeMPgJEwQo6p3BKD-l1YXechUIRp9TaDP4uLUutBzir95wVh1lSVW6W4yDWJYHvWHWwCoF__hKeT5MoPcIsnRt0sU7jHSQt6vqAeiihU38cm_ghSIRmrrSCt2a6SgyE
-    # Use cloud mode to runh a Feature branch scan
-    mode: # optional
-    # The instance Id. Required when cloud mode is enabled.
-    url_id: # optional
+        uses: qualityclouds/action-full-scan@0.0.11
+          with:
+      # You need to provide a valid API key to connect the Quality Clouds ruleset against which your code will be checked
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFkNTY5ZGRmYTVlOWNhNTc0YTE2NDllNzhlZTBkZWJiOGM0MTdmODUyMzE3MjRiZGI1ZDA3MWVmM2UxNjU2MzYyMDQ1YWMzM2E2YmJjMjI3In0.eyJhdWQiOiIyIiwianRpIjoiYWQ1NjlkZGZhNWU5Y2E1NzRhMTY0OWU3OGVlMGRlYmI4YzQxN2Y4NTIzMTcyNGJkYjVkMDcxZWYzZTE2NTYzNjIwNDVhYzMzYTZiYmMyMjciLCJpYXQiOjE2MTcxMDExOTcsIm5iZiI6MTYxNzEwMTE5NywiZXhwIjoxNjQ4NjM3MTk3LCJzdWIiOiIxMjEwIiwic2NvcGVzIjpbImxpdmUtY2hlY2siXX0.iBbeM9u7v0TCQFzWwf9CVF1u_3eYsHOyuPpgVd8n4A3X7Fung7EcUJEGNC0cT34wTDds4G4k1Gir1XTvb4dalQVjsf3BjVy5Hd9oAfd6GhDR5xLG6iQQlyLxrBKu_6I8b8JW9HFdM0gGnpxURjAcdndvPfFWoXYmUhyPhdWu3BUyWAgSQgJiwfuLv8-3pqFrs46oQGJKrg_az4nPHZ9sG_Wdr_e_Emh3CS-TuUSAUjbV1F3EjXCISiYLL-iQjAZXUTqauWvWoePG68Dz3NU_3xQ1uTojBIRhj9bBU3KVK3BHRs_DU1A49CRvdOTRFVbhsWOYvAtXpW1eBDKSvpWRwOa_TX6rhLPbsYA-BrYb6WUQQiYQs5HoAg_qpZwssjmqE0E40SbL1p4GIWoiGNcL00x1ttHxt-Z1jxpvf2N0h3G4oSsZ-067ERFxcnDFUXglo_yKwUaXYQ66eDCtT4bqq1olt54i8e3a2v_VUN8F-nxtQKRN4Bp6fOhUDNnTn7MRtI59y6uPGeIhQ4535ouKXa23u0NOIbjoXSoPfr1NSoJPoeMPgJEwQo6p3BKD-l1YXechUIRp9TaDP4uLUutBzir95wVh1lSVW6W4yDWJYHvWHWwCoF__hKeT5MoPcIsnRt0sU7jHSQt6vqAeiihU38cm_ghSIRmrrSCt2a6SgyE
+    
